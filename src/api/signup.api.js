@@ -9,11 +9,15 @@ class SignUp {
                 password,
                 connection: 'Username-Password-Authentication',
             });
-
+            console.log('11111111111111111111111', response);
             console.log('User signed up successfully:', response.data);
             return { output: 200, success: true, message: 'User signed up successfully' };
         } catch (error) {
-            console.error('User signup error:', error.response ? error.response.data : error.message);
+            if (error?.response?.data?.code === 'invalid_signup') {
+                return { output: 202, success: false, error: '*User already exist' };
+            } if (error?.response?.data?.code === 'invalid_password') {
+                return { output: 400, success: false, error: '*Password is too Weak' };
+            }
             return { output: 500, success: false, error: 'User signup failed' };
         }
     }

@@ -19,10 +19,18 @@ export const TodoSignUp = (props) => {
       setErrorMessage('');
         if ((data?.password)?.trim() === (data?.repassword)?.trim()) {
           const createUser = await SignUp?.signup(data?.email, data?.password);
+          console.log('%c⧭', 'color: #aa00ff', createUser);
           if (createUser?.output === 200) {
             props?.onSignIn();
-          } else {
-            setErrorMessage('*Something Went Wrong please try again');
+          }
+          if (createUser?.output === 202) {
+            setErrorMessage(createUser?.error);
+          }
+          if (createUser?.output === 400) {
+            setErrorMessage(createUser?.error);
+          }
+          if (createUser?.output === 500) {
+            setErrorMessage('*Something went wrong please try later');
           }
         } else {
             setErrorMessage('*Password does not match');
