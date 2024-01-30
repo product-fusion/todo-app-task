@@ -9,3 +9,17 @@ This application was intentionally broken, there are six critical issues that a 
 
 
 Use `npm start` to run project.
+------------------------------------------------------------------------------------------------------
+What are all the things I have done ?
+
+1. I have created the static login and signup page and integrated with the todo application. 
+    - userName : "testuser" , 
+    - passWord: "test@123"
+2. Fixed the bugs in the todo application.
+3. Stored the data to the index db and get the data from index db.
+4. Stored the logged in detail in localstorage.
+
+Pending Items : 
+
+1. Login and Signup not integrated with any third party applications.
+2. Sync data from Database.

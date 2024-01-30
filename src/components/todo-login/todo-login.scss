@@ -1,0 +1,79 @@
+.todo-logincard{
+   background-color: white;
+   width: 400px;
+   border-radius: 20px;
+   height: 400px;
+   transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+  }
+}
+
+.todo-title{
+    font-family: 'Oxygen';
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 8%;
+}
+
+.login-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.input-bg{
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-weight: 700;
+}
+
+.login-button{
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Oxygen';
+    background-color: teal;
+    font-weight: 700;
+    color: white;
+    transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+  }
+}
+
+.login-signup{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-weight: 700;
+    cursor: pointer;
+    color: #3285a8;
+    font-family: 'Oxygen';
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.login-error{
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 3%;
+    font-weight: 700;
+}

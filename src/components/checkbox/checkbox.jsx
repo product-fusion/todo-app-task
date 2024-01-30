@@ -10,7 +10,6 @@ export const Checkbox = ({
       role="checkbox"
       aria-checked
       className="checkbox-content"
-      onClick={onClick}
       onKeyUp={onKeyUp}
     >
       <input tabIndex="-1" type="checkbox" checked={checked} onChange={onClick} />

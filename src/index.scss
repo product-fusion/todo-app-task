@@ -11,3 +11,26 @@ body {
   width: 600px;
   margin: auto;
 }
+
+.loginbg{
+  width: 100%;
+  background-color: teal;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
